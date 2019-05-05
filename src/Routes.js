@@ -10,7 +10,7 @@ import Bootstrap from './components/Boostrap/Bootstrap';
 class Routes extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Fragment>
           <TopMenu/>
           <Switch>
